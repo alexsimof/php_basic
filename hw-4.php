@@ -1,6 +1,6 @@
 <?php
 // -1
-function areaCircle(int $radius)
+function areaCircle(int $radius):float
 {
     $area = M_PI * pow($radius, 2);
     return $area;
@@ -8,7 +8,7 @@ function areaCircle(int $radius)
 var_dump(areaCircle(5)) . PHP_EOL;
 
 // -2
-function degreeReturn(int $number, int $power)
+function degreeReturn(int $number, int $power):int
 {
     $result = pow($number, $power);
     return $result;
@@ -17,12 +17,11 @@ echo degreeReturn(2, 2) . PHP_EOL;
 
 
 // -3
-function degreeModify(int &$number, int $power)
+function degreeModify(int &$number, int $power):void
 {
-    $number = pow($number, $power);
-    return $number;
+    $number = $number ** $power;
 }
-$number = 3;
+$myNumber = 3;
 $power = 3;
-echo degreeModify($number, $power) . PHP_EOL;
+echo degreeModify($myNumber, $power) . PHP_EOL;
 
