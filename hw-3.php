@@ -34,7 +34,7 @@ $res23 = $empty === $bool . PHP_EOL; // false
 $res24 = $empty == $null . PHP_EOL; // false
 $res25 = $empty === $null . PHP_EOL; // false
 $res26 = $bool == $bool . PHP_EOL; // true
-$res27 = $bool === $bool . PHP_EOL; // вот тут не понятно, документация говорит true, а выводит false.. ?
+$res27 = $bool == $bool . PHP_EOL; // вот тут не понятно, документация говорит true, а выводит false.. ?
 $res28 = $bool1 == $bool1 . PHP_EOL; // вот тут не понятно, документация говорит true, а выводит false.. ?
 $res29 = $bool1 === $bool1 . PHP_EOL; // вот тут не понятно, документация говорит true, а выводит false.. ?
 
@@ -79,4 +79,5 @@ $color = match ($value) {
     6 => "black",
     default => "white",
 };
-var_dump($color);
+//var_dump($color);
+
