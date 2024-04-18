@@ -4,7 +4,6 @@ while ($i <= 10) {
     echo $i++ . PHP_EOL;
 }
 
-
 $n = 1;
 $res = 1;
 while ($n <= 5) {
@@ -20,3 +19,6 @@ while ($i <= 20 ) {
    }
    $i++;
 }
+
+
+
