@@ -9,6 +9,7 @@ function newArray(int $length = 15, int $min = 1, int $max = 15): array
 }
 
 $users = newArray( 15, 1, 20);
+var_dump($users);
 
 $result = 0;
 foreach ($users as $user) {
