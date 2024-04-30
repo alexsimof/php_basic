@@ -1,14 +1,15 @@
 <?php
-function getArguments(): void
+function getArguments(string $arg, $arg1): void
 {
-    $arg = fgets(STDIN);
-    file_put_contents('test.txt', $arg, FILE_APPEND);
+    $argument = fgets($arg1);
+    file_put_contents($arg, $argument, FILE_APPEND);
 }
-getArguments();
+getArguments('test.txt', STDIN);
 
 function readArguments(): string
 {
-   $line =  file_get_contents('test.txt');
-   return $line;
+   $line =  file('test.txt');
+   $lastLine = $line[count($line)-1];
+   return $lastLine;
 }
 echo readArguments();
