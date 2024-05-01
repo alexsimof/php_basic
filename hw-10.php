@@ -1,14 +1,20 @@
 <?php
-function getArguments(string $arg, $arg1): void
+function getArguments(string $path, mixed $data): void
 {
-    $argument = fgets($arg1);
-    file_put_contents($arg, $argument, FILE_APPEND);
+    $stream = fgets($data);
+    file_put_contents($path, $stream, FILE_APPEND);
 }
 getArguments('test.txt', STDIN);
 
 function readArguments(): string
 {
-   $line =  file('test.txt');
+    $file_path = 'test.txt';
+
+   if (!file_exists($file_path)) {
+       return $file_path;
+   }
+
+   $line =  file($file_path);
    $lastLine = $line[count($line)-1];
    return $lastLine;
 }
