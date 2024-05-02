@@ -11,5 +11,5 @@ $noname = function ($value) {
     echo $value;
 };
 
- echo summa(5,2,) . PHP_EOL;
- summa(5,2, $noname) . PHP_EOL;
+ echo phpsumma(5, 2,) . PHP_EOL;
+ phpsumma(5, 2, $noname) . PHP_EOL;

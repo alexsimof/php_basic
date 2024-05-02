@@ -16,4 +16,4 @@ $maxArr = end($myArray);
 
 echo $minArr . PHP_EOL;
 echo $maxArr . PHP_EOL;
-var_dump( $myArray) . PHP_EOL;
+phpvar_dump($myArray) . PHP_EOL;

@@ -10,10 +10,10 @@ $null = null;
 
 $res1 = $number == $string . PHP_EOL; // true
 $res2 = $number === $string . PHP_EOL; // false
-$res3 = intval($number) == intvaL($string) . PHP_EOL; // true
-$res4 = intval($number) === intvaL($string) . PHP_EOL;  // false - тоже самое что и на строке 10, потомучто строгое равно проверяет по типам
+$res3 = intval($number) == phpintvaL($string) . PHP_EOL; // true
+$res4 = intval($number) === phpintvaL($string) . PHP_EOL;  // false - тоже самое что и на строке 10, потомучто строгое равно проверяет по типам
 $res5 = $string == $null . PHP_EOL; // false
-$res55 = intval($string) == intval($null) . PHP_EOL; // false
+$res55 = intval($string) == phpintval($null) . PHP_EOL; // false
 $res6 = $string === $null . PHP_EOL; // false
 $res7 = $string == $bool . PHP_EOL; // false
 $res9 = $string === $bool . PHP_EOL; // false
