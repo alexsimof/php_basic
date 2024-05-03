@@ -1,5 +1,7 @@
 <?php
 
+namespace hw-11;
+
 class Bank
 {
     private string $name;
@@ -91,7 +93,7 @@ class Bank
     /**
      * @throws Exception
      */
-    public function getCash (int $cash): int
+    public function getCash(int $cash): int
     {
         if ($this->balance !== 0 && $cash !== 0 && $cash < $this->balance) {
             $this->balance = $this->balance - $cash;
@@ -101,16 +103,18 @@ class Bank
     }
 
     private array $data = [];
-     public function __set(string $name, $value): void
-     {
-         $this->data[$name] = $value;
-     }
-     public function __get(string $name)
-     {
-         if (isset($this->data[$name])) {
-             return $this->data[$name];
-         }
-         return null;
-     }
+
+    public function __set(string $name, $value): void
+    {
+        $this->data[$name] = $value;
+    }
+
+    public function __get(string $name)
+    {
+        if (isset($this->data[$name])) {
+            return $this->data[$name];
+        }
+        return null;
+    }
 
 }

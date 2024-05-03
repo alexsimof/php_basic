@@ -1,14 +1,11 @@
 <?php
+require_once 'Text.php';
+require_once 'TwoText.php';
 
-require_once __DIR__ . '/Bank.php';
+
+$text1 = new Text();
+$text2 = new TwoText();
+echo $text1->print('curent text'). PHP_EOL;
+echo $text2->print("curent text"). PHP_EOL;
 
 
-
-try {
-    $bank = new Bank('Alex', 12345, 1);
-    $bank->addBalance(1000);
-} catch (Exception $error) {
-    echo $error->getMessage() . PHP_EOL;
-} finally {
-    echo $bank->getBalance() . PHP_EOL;
-}
