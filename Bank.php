@@ -10,7 +10,7 @@ class Bank
     {
         $this->name = $name;
         $this->accountNumber = $accountNumber;
-        $this->accountBalance = $accountBalance;
+        $this->accountBalance = max($accountBalance, 0);
     }
 
     public function getName(): string
