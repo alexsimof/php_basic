@@ -2,15 +2,13 @@
 
 require_once __DIR__ . '/Bank.php';
 
-$bank = new Bank('Alex', 000123, 0);
-
-//$bank->setAccountBalance(1000);
-echo $bank->getAccountBalance();
 
 
-
-//try {
-//    $bank->getCash(5000);
-//} catch (Exception $error) {
-//    echo $error->getMessage();
-//}
+try {
+    $bank = new Bank('Alex', 12345, 1);
+    $bank->addBalance(1000);
+} catch (Exception $error) {
+    echo $error->getMessage() . PHP_EOL;
+} finally {
+    echo $bank->getBalance() . PHP_EOL;
+}
