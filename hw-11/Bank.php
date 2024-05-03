@@ -1,7 +1,5 @@
 <?php
 
-namespace hw-11;
-
 class Bank
 {
     private string $name;

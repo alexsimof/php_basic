@@ -2,8 +2,6 @@
 
 require_once __DIR__ . '/Bank.php';
 
-
-
 try {
     $bank = new Bank('Alex', 12345, 1);
     $bank->addBalance(1000);

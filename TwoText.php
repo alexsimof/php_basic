@@ -1,9 +1,9 @@
 <?php
 
-class TwoText extends Text
+class TwoText extends OneText
 {
-    public function print(string $text): string
+    public function my_print(): string
     {
-        return $text = strtoupper($text);
+        return strtoupper($this->text);
     }
 }

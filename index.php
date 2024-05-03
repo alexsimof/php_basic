@@ -1,11 +1,11 @@
 <?php
-require_once 'Text.php';
+require_once 'OneText.php';
 require_once 'TwoText.php';
 
 
-$text1 = new Text();
-$text2 = new TwoText();
-echo $text1->print('curent text'). PHP_EOL;
-echo $text2->print("curent text"). PHP_EOL;
+$text1 = new OneText('some text');
+$text2 = new TwoText('some text');
+echo $text1->my_print() . PHP_EOL;
+echo $text2->my_print() . PHP_EOL;
 
 
