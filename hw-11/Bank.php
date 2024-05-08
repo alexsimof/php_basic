@@ -1,6 +1,6 @@
 <?php
 
-namespace hw-11;
+
 
 class Bank
 {
