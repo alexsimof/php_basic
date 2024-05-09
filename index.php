@@ -6,7 +6,7 @@ require_once __DIR__ . '/ToDoList.php';
 //$toDo->addTask('test-1', 1);
 
 try {
-    $toDo = new ToDoList();
+    $toDo = new ToDoList('tasks.txt');
     $toDo->addTask('Убрать квартиру', 1);
     $toDo->addTask('Купить хлеб', 3);
     $toDo->addTask('Помыть машину', 2);
