@@ -2,8 +2,8 @@
 
 abstract class Figure
 {
-    abstract public function area();
+    abstract public function area(): int|float;
 
-    abstract public function perimeter();
+    abstract public function perimeter(): int|float;
 
 }

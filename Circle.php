@@ -19,9 +19,9 @@ class Circle extends Figure
         return $s = pi() * pow($this->radius, 2);
     }
 
-    public function perimeter(): void
+    public function perimeter(): int|float
     {
-//        return $p = 2 * ($this->width + $this->height);
+        return $p = 2 * ($this->width + $this->height);
     }
 
     public function getArea(): int|float

@@ -20,9 +20,9 @@ class Rectangle extends Figure
         return $height > 0 ? $this->height = $height : 0;
     }
 
-    public function area(): void
+    public function area(): int|float
     {
-//        return $s = pi() * pow($this->radius, 2);
+        return $s = pi() * pow($this->radius, 2);
     }
 
     public function perimeter(): int|float
