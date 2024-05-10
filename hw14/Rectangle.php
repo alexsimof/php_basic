@@ -1,6 +1,6 @@
 <?php
 
-abstract class Figure
+class Rectangle extends Figure
 {
     protected int|float $width;
     protected int|float $height;
@@ -27,9 +27,15 @@ abstract class Figure
         return $radius > 0 ? $this->radius = $radius : 0;
     }
 
-    abstract public function area();
+    public function area(): int|float
+    {
+        return $s = pi() * pow($this->radius, 2);
+    }
 
-    abstract public function perimeter();
+    public function perimeter(): int|float
+    {
+        return $p = 2 * ($this->width + $this->height);
+    }
 
     public function getPerimeter(): int|float
     {
@@ -40,5 +46,4 @@ abstract class Figure
     {
         return $this->area();
     }
-
 }

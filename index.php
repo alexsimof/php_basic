@@ -1,11 +1,8 @@
 <?php
 
-require_once 'Figure.php';
-require_once 'Rectangle.php';
-require_once 'Circle.php';
+require_once 'Verification.php';
+require_once 'News.php';
+require_once 'Blog.php';
 
-
-$rectangle = new Rectangle(4, 6, 8);
-$circle = new Rectangle(4, 6, 8);
-echo $rectangle->getPerimeter() . PHP_EOL;
-echo $circle->getArea() . PHP_EOL;
+$news = new News('Hello World!', 'The director greeted the students');
+$blog = new Blog('Hello World!', 'The director greeted the students');
