@@ -4,17 +4,17 @@ trait Verification
 {
     public function getTitle(): string
     {
-        if (strlen($this->title) < 4) {
-            throw new Exception("Title must be at least 4 characters long");
+        if (!empty($this->title)) {
+            return $this->title;
         }
-        return $this->title;
+        throw new Exception("Title can't be empty");
     }
 
     public function getContent(): string
     {
         if (empty($this->content)) {
-            throw new Exception("Content cannot be empty");
+            return $this->content;
         }
-        return $this->content;
+        throw new Exception("Content cannot be empty");
     }
 }
