@@ -2,7 +2,7 @@
 
 trait Verification
 {
-    public function getTitle($title): string
+    public function getTitle(string $title): string
     {
         if (!empty($title)) {
             return $this->title = $title;
@@ -10,7 +10,7 @@ trait Verification
         throw new Exception("Title can't be empty");
     }
 
-    public function getContent($content): string
+    public function getContent(string $content): string
     {
         if (!empty($content)) {
             return $this->content = $content;
