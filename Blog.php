@@ -11,8 +11,8 @@ class Blog
      */
     public function __construct(string $title, string $content)
     {
-        $this->getTitle();
-        $this->getContent();
+        $this->getTitle($title);
+        $this->getContent($content);
     }
 
 }
