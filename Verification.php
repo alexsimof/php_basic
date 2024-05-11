@@ -4,16 +4,16 @@ trait Verification
 {
     public function getTitle($title): string
     {
-        if (!empty($this->title)) {
-            return $this->title;
+        if (!empty($title)) {
+            return $this->title = $title;
         }
         throw new Exception("Title can't be empty");
     }
 
     public function getContent($content): string
     {
-        if (empty($this->content)) {
-            return $this->content;
+        if (!empty($content)) {
+            return $this->content = $content;
         }
         throw new Exception("Content cannot be empty");
     }
