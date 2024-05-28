@@ -8,13 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="server.php" method="get">
+    <form action="Request.php" method="get">
         <input id="name" type="text" name="name" placeholder="Name">
         <input id="email" type="email" name="email" placeholder="Email">
         <input type="submit" value="Submit">
     </form>
 
-    <form style="margin-top: 20px;" action="server.php" method="post">
+    <form style="margin-top: 20px;" action="Request.php" method="post">
         <input id="name" type="number" name="number-one" placeholder="Enter number">
         <input id="email" type="number" name="number-two" placeholder="Enter number">
         <input type="submit" value="Submit">

@@ -1,10 +1,6 @@
 <?php
 
-
-// переделаю через ООП, сдал домашку потом досмотрел видео..))))
-
-
-
+//
 //$methods = ['POST', 'GET'];
 //
 //$currentMethod = strtoupper($_SERVER['REQUEST_METHOD']);
